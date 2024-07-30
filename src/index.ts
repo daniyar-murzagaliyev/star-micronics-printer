@@ -5,7 +5,8 @@ import type { StarMicronicsPrinterPlugin } from './definitions';
 const StarMicronicsPrinter = registerPlugin<StarMicronicsPrinterPlugin>(
   'StarMicronicsPrinter',
   {
-    web: () => import('./web').then(m => new m.StarMicronicsPrinterWeb()),
+    scanDevices: () => import('./web').then(m => new m.StarMicronicsPrinterWeb()),
+    connectPrinter: () => import('./web').then(m => new m.StarMicronicsPrinterWeb()),
   },
 );
 

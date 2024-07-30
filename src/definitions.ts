@@ -1,3 +1,4 @@
 export interface StarMicronicsPrinterPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  scanDevices(): Promise<any>;
+  connectPrinter(): Promise<any>;
 }

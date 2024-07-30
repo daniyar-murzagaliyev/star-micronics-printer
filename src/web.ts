@@ -6,8 +6,11 @@ export class StarMicronicsPrinterWeb
   extends WebPlugin
   implements StarMicronicsPrinterPlugin
 {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async scanDevices(): Promise<any> {
+    return;
+  }
+
+  async connectPrinter(): Promise<any> {
+    return;
   }
 }
