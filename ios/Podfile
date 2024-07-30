@@ -9,6 +9,8 @@ end
 
 target 'Plugin' do
   capacitor_pods
+  pod 'StarIO', '2.11.2'
+  pod 'StarIO_Extension', '1.18.0'
 end
 
 target 'PluginTests' do
